@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.shape.Line?>
+
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.control.TextField?>
+
+<?import javafx.scene.control.TextArea?>
+<VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.example.completablefutures.HelloController"
+      stylesheets="@styles.css" fx:id="Box">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
+    </padding>
+
+    <VBox fx:id="mainBox">
+        <Button styleClass="Buttons" text=" Hello! " onAction="#onHelloButtonClick"/>
+        <Label fx:id="welcomeText"/>
+        <Button styleClass="Buttons" text="Author words!" onAction="#onNewButtonClick"/>
+        <Label fx:id="studentText"/>
+    </VBox>
+    <Line fx:id="line" startX="0" startY="200" endX="460" endY="200" stroke="black" strokeWidth="1"/>
+    <VBox fx:id="mainBox2">
+        <Text fx:id="textHeader">Get HTML code from the URL and display it in the GUI. </Text>
+        <Label fx:id="messageText" text="Enter the URL and I'll email you if all is well!"/>
+        <TextField fx:id="inputField" promptText="Please enter the URL of the site"/>
+        <TextArea fx:id="outputArea" promptText="HTML code is going to be here!" prefHeight="260.0" prefWidth="400.0" editable="false"/>
+        <Text> </Text>
+        <Button styleClass="Buttons" text="Get HTML code!" onAction="#onURLButtonClick"/>
+    </VBox>
+</VBox>

@@ -1,0 +1,36 @@
+#Box {
+    -fx-background-color: #BCA37F;
+}
+
+#mainBox, #mainBox2, #textName, .Buttons, #welcomeText, #studentText, #messageText {
+    -fx-alignment: center;
+}
+
+#mainBox, #mainBox2, .Buttons {
+    -fx-border-color: #113946;
+}
+
+#mainBox, #mainBox2 {
+    -fx-vgrow: never;
+    -fx-padding: 10 10 10 10;
+    -fx-background-color: #EAD7BB;
+}
+
+.Buttons {
+    -fx-background-color: #FFF2D8;
+}
+
+#welcomeText, #studentText, #messageText {
+    -fx-font-size: 12px;
+}
+
+#welcomeText { -fx-padding: 10 0 20 0; }
+#studentText { -fx-padding: 10 0 0 0; }
+
+#textHeader {
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-padding: 5 0 25 0;
+}
+
+#messageText {-fx-padding: 12 0 22 0;}
